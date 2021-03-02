@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CHROME_Suite" configfailurepolicy="continue" parallel="tests" thread-count="2"  verbose="1">
+    <listeners>
+        <listener class-name="com.yulrud.uiproject.reporting.TestLogListener"/>
+        <listener class-name="com.yulrud.uiproject.reporting.AllureScreenshotListener"/>
+    </listeners>
+    <test name="Chrome test">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="com.yulrud.uiproject.EventCardPage.EventCardPageTest"/>
+            <class name="com.yulrud.uiproject.EventCardPage.EventCardPageTestToFail"/>
+            <class name="com.yulrud.uiproject.EventListPage.EventCardTest"/>
+            <class name="com.yulrud.uiproject.EventListPage.EventCardTestToFail"/>
+            <class name="com.yulrud.uiproject.EventListPage.EventCounterTest"/>
+            <class name="com.yulrud.uiproject.EventListPage.EventCounterTestToFail"/>
+            <class name="com.yulrud.uiproject.EventListPage.EventDatesTest"/>
+            <class name="com.yulrud.uiproject.EventListPage.EventDatesTestToFail"/>
+            <class name="com.yulrud.uiproject.TaskLibraryPage.TaskLibraryFilterTest"/>
+            <class name="com.yulrud.uiproject.TaskLibraryPage.TaskLibraryFilterTestToFail"/>
+        </classes>
+    </test>
+    <test name="Firefox test">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="com.yulrud.uiproject.EventCardPage.EventCardPageTest"/>
+            <class name="com.yulrud.uiproject.EventCardPage.EventCardPageTestToFail"/>
+            <class name="com.yulrud.uiproject.EventListPage.EventCardTest"/>
+            <class name="com.yulrud.uiproject.EventListPage.EventCardTestToFail"/>
+            <class name="com.yulrud.uiproject.EventListPage.EventCounterTest"/>
+            <class name="com.yulrud.uiproject.EventListPage.EventCounterTestToFail"/>
+            <class name="com.yulrud.uiproject.EventListPage.EventDatesTest"/>
+            <class name="com.yulrud.uiproject.EventListPage.EventDatesTestToFail"/>
+            <class name="com.yulrud.uiproject.TaskLibraryPage.TaskLibraryFilterTest"/>
+            <class name="com.yulrud.uiproject.TaskLibraryPage.TaskLibraryFilterTestToFail"/>
+        </classes>
+    </test>
+</suite>
