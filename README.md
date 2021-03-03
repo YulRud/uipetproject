@@ -3,7 +3,8 @@ This is a UI test project
 Technologies and approaches:
 1. PageObject + Selenium + TestNG + Java 8 for test
 2. AllureReporting for reporting (with Allure logs, Screenshots on failure, Steps)
-3. Also for creation a proper webDriver SimpleFactory was used in the WebDriverFactory class
+3. Crossbrowser testing: Firefox and Chrome
+4. Also for creation a proper webDriver SimpleFactory was used in the WebDriverFactory class
 
 As the task for my pet project I took a final project from this course program (but used another technological stack and changed some tests): 
 https://cdn.otus.ru/media/public/ed/36/ed367d_program_java_qa_engineer.pdf - page 10
