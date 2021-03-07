@@ -44,7 +44,7 @@ public class TasksLibrarySteps extends BaseSteps {
     public void checkOnlyTalksWithTitlesWithKeyWordDisplayed(String keyWord) {
         List<String> titles = talksLibraryPage.getTalksTitles();
         Assert.assertTrue(titles.stream()
-                .map(t -> t.toLowerCase())
+                .map(String::toLowerCase)
                 .allMatch(t -> t.contains(keyWord.toLowerCase())), "Some titles do not contain key word");
     }
 
